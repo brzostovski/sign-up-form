@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'Norse-Bold';
-  src: url(./Norse-Bold.woff) format('woff');
+  src: url(./fonts/Norse-Bold.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .banner-container {
-  background-image: url(./banner-image.jpg);
+  background-image: url(./images/banner-image.jpg);
   background-size: cover;
   background-position: center;
   
