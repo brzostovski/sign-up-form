@@ -2,6 +2,8 @@
   --bg-color: antiquewhite;
   --font-color: rgb(69, 69, 69);
   --form-bg-color: rgb(245, 245, 245);
+  --shadow-color: rgb(26, 26, 26);
+  --accent-color: rgb(208, 110, 128);
 }
 
 * {
@@ -36,7 +38,7 @@ body {
   height: 100vh;
   width: clamp(100px, 25%, 400px);
 
-  box-shadow: 0 0 16px black;
+  box-shadow: 0 0 16px var(--shadow-color);
 }
 
 .logo-container {
@@ -101,13 +103,17 @@ body {
 
   padding: 16px;
 
-  border: dashed;
+  /*border: dashed;*/
 }
 
 h1 {
   font-size: 26px;
   font-weight: bold;
   line-gap-override: 1.1rem;
+}
+
+h1 > em {
+  color: var(--accent-color);
 }
 
 .empty-line {
@@ -117,10 +123,14 @@ h1 {
 .inputs-container {
   margin: 32px 0 16px 0;
   height: 400px;
-
-  box-shadow: 0 0 16px black;
+  border-radius: 16px;
+  box-shadow: 0 0 16px var(--shadow-color);
 
   background-color: var(--form-bg-color);
 
-  border: dashed;
+  /*border: dashed;*/
+}
+
+.log-in > a {
+  color: var(--accent-color);
 }
