@@ -3,6 +3,13 @@
   --font-color: rgb(26, 26, 26);
 }
 
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url(./Norse-Bold.otf) format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   box-sizing: border-box;
@@ -23,15 +30,33 @@ body {
   background-position: center;
   
   display: flex;
-  justify-content: center;
-  align-items: end;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
 
   height: 100vh;
   width: clamp(200px, 30%, 400px);
   padding: 16px;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  color: var(--bg-color);
+  font: 'Norse-Bold';
+}
+
+.logo-container > img {
+  height: 128px;
+  width: auto;
+}
+
 #photo-credit {
+  text-align: center;
+  width: fit-content;
   font-size: 0.5rem;
   color: var(--bg-color);
   background-color: rgba(0, 0, 0, 0.3);
