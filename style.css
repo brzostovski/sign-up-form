@@ -45,7 +45,7 @@ body {
   align-items: center;
   flex-grow: 1;
 
-  color: var(--bg-color);
+  color: white;
   font: 128px 'Norse-Bold';
 }
 
@@ -58,11 +58,11 @@ body {
   text-align: center;
   width: fit-content;
   font-size: 0.5rem;
-  color: var(--bg-color);
+  color: white;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 4px;
 }
 
 #photo-credit > a {
-  color: var(--bg-color);
+  color: lightgray;
 }
