@@ -1,10 +1,13 @@
 :root {
   --bg-color: antiquewhite;
-  --font-color: rgb(26, 26, 26);
+  --font-color: rgb(69, 69, 69);
+  --form-bg-color: rgb(245, 245, 245);
 }
 
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--font-color);
+  
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -22,6 +25,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
 .banner-container {
@@ -30,7 +34,9 @@ body {
   background-position: center;
  
   height: 100vh;
-  width: clamp(100px, 30%, 400px);
+  width: clamp(100px, 25%, 400px);
+
+  box-shadow: 0 0 16px black;
 }
 
 .logo-container {
@@ -43,10 +49,10 @@ body {
 
 .logo-text {
   position: relative;
-  top: 1.5vw;
+  top: 1vw;
 
   color: white;
-  font: 10vw 'Norse-Bold';
+  font: 8vw 'Norse-Bold';
 }
 
 #logo-wrapper {
@@ -59,13 +65,13 @@ body {
   gap: 3vw;
 
   width: 100%;
-  height: 15vw;
+  height: 12vw;
 
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 #logo-wrapper > img {
-  height: 10vw;
+  height: 8vw;
   width: auto;
 }
 
@@ -83,4 +89,38 @@ body {
 
 #photo-credit > a {
   color: lightgray;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100vh;
+  width: 800px;
+
+  padding: 16px;
+
+  border: dashed;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  line-gap-override: 1.1rem;
+}
+
+.empty-line {
+  height: 1.5rem;
+}
+
+.inputs-container {
+  margin: 32px 0 16px 0;
+  height: 400px;
+
+  box-shadow: 0 0 16px black;
+
+  background-color: var(--form-bg-color);
+
+  border: dashed;
 }
