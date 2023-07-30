@@ -5,7 +5,7 @@
   --shadow-color: rgb(26, 26, 26);
   --accent-color: rgb(208, 110, 128);
   --font-reverse-color: white;
-  --required-color: #ff5e5e;
+  --caution-color: #ff5e5e;
 }
 
 * {
@@ -106,8 +106,6 @@ body {
   width: 800px;
 
   padding: 16px;
-
-  /*border: dashed;*/
 }
 
 h1 {
@@ -142,7 +140,7 @@ h1 > em {
 }
 
 span[aria-label='required'] {
-  color: var(--required-color);
+  color: var(--caution-color);
 }
 
 fieldset {
@@ -174,6 +172,16 @@ input {
   border-radius: 6px;
 
   box-shadow: 0 0 4px var(--shadow-color);
+
+  font-weight: bold;
+}
+
+input:user-invalid {
+  border: solid var(--caution-color) 3px;
+}
+
+input:user-valid {
+  border: solid rgb(0, 180, 0) 3px;
 }
 
 .button-wrapper {
