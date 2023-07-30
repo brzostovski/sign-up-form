@@ -146,14 +146,19 @@ span[aria-label='required'] {
 }
 
 fieldset {
+  display: flex;
+  justify-content: space-around;
   border: none;
 }
 
-label {
-  display: inline-block;
-  width: 120px;
+.input-pair {
+  display: flex;
+  flex-direction: column;
 
-  text-align: right;
+  width: 300px;
+}
+
+label {
   font-size: 0.7rem;
   text-transform: uppercase;
 
@@ -161,7 +166,14 @@ label {
 }
 
 input {
-  display: inline-block;
+  height: 32px;
+
+  padding: 4px;
+
+  border: none;
+  border-radius: 6px;
+
+  box-shadow: 0 0 4px var(--shadow-color);
 }
 
 .button-wrapper {
