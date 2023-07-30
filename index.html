@@ -25,10 +25,76 @@
       <h1>Sign up <em>now</em> to get started.</h1>
       <div class="empty-line"></div>
       <h1>You <em>know</em> you want to.</h1>
-      <form action="#">
+      <form name='register' method="post" action="#">
         <div class="inputs-container">
-          <h1>Let's do this!</h1>
-
+          <div id="form-title">
+            <h2>Let's do this!</h2>
+            <p>
+              Required fields are followed by
+              <strong><span aria-label="required">*</span></strong>
+            </p>
+          </div>
+          <fieldset id="name">
+            <label for="fname">
+              First Name
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input  type="text"
+                    name="user-first-name"
+                    id="fname"
+                    placeholder="John"
+                    minlength="3"
+                    required>
+            <label for="lname">
+              Last name
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input  type="text"
+                    name="user-last-name"
+                    id="lname"
+                    placeholder="Smith"
+                    minlength="2"
+                    required>
+          </fieldset>
+          <fieldset id="contact">
+            <label for="mail">
+              E-mail
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input  type="email"
+                    name="user-mail"
+                    id="mail"
+                    placeholder="john.smith@email.xyz"
+                    required>
+          <label for="tel">
+            Phone number
+          </label>
+          <input  type="tel"
+                  name="user-phone-number"
+                  id="tel"
+                  minlength="9"
+                  maxlength="12">
+        </fieldset>
+        <fieldset id="password">
+          <label for="pwd">
+            Password
+            <strong><span aria-label="required">*</span></strong>
+          </label>
+          <input  type="password"
+                  name="password"
+                  id="pwd"
+                  minlength="8"
+                  required>
+        <label for="pwd-confirm">
+          Confirm password
+          <strong><span aria-label="required">*</span></strong>
+        </label>
+        <input  type="password"
+                name="password-confirmation"
+                id="pwd-confirm"
+                minlength="8"
+                required>
+      </fieldset>
         </div>
         <div class="button-wrapper">
           <button type="submit">Create account</button>
