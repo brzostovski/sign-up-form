@@ -14,3 +14,6 @@ function confirmPwd(pwd, pwdConfirm) {
 PWD_CONFIRM_INPUT.addEventListener('change', () => {
   confirmPwd(PWD_INPUT.value, PWD_CONFIRM_INPUT.value);
 });
+PWD_INPUT.addEventListener('change', () => {
+  confirmPwd(PWD_INPUT.value, PWD_CONFIRM_INPUT.value);
+})
