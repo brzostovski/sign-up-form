@@ -164,7 +164,6 @@ fieldset {
 label {
   font-size: 0.7rem;
   text-transform: uppercase;
-
   opacity: 0.7;
 }
 
@@ -190,6 +189,18 @@ input::placeholder {
 
 input:user-invalid {
   border: solid var(--caution-color) 3px;
+}
+
+input#pwd:user-invalid + span::after {
+  position: fixed;
+
+  content: '(min. 8 characters)';
+
+  font-size: 0.7rem;
+  text-transform: uppercase;
+
+  color: var(--caution-color);
+  opacity: 0.7;
 }
 
 input:user-valid {
