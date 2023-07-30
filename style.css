@@ -2,6 +2,7 @@
   --bg-color: white;
   --font-color: rgb(69, 69, 69);
   --form-bg-color: rgb(245, 245, 245);
+  --input-bg-color: white;
   --shadow-color: rgb(26, 26, 26);
   --accent-color: rgb(208, 110, 128);
   --font-reverse-color: white;
@@ -156,6 +157,10 @@ fieldset {
   width: 300px;
 }
 
+.input-pair:last-child {
+  margin-bottom: 1rem;
+}
+
 label {
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -170,10 +175,15 @@ input {
 
   border: none;
   border-radius: 6px;
-
-  box-shadow: 0 0 4px var(--shadow-color);
+  box-shadow: 0 0 4px -2px var(--shadow-color);
 
   font-weight: bold;
+
+  background-color: var(--input-bg-color);
+}
+
+input::placeholder {
+  opacity: 0.5;
 }
 
 input:user-invalid {
