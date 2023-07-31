@@ -157,6 +157,10 @@ fieldset {
   width: 300px;
 }
 
+.input-pair.pwd {
+  position: relative;
+}
+
 .input-pair:last-child {
   margin-bottom: 1rem;
 }
@@ -192,9 +196,11 @@ input:user-invalid {
 }
 
 input#pwd:user-invalid + span::after {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
 
-  content: '(min. 8 characters)';
+  content: 'min. 8 characters';
 
   font-size: 0.7rem;
   text-transform: uppercase;
